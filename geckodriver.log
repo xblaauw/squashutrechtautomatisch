@@ -1,0 +1,132 @@
+1682291525585	geckodriver	INFO	Listening on 127.0.0.1:62305
+1682291528653	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62306" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofile02OIqi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682291529158	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682291529167	Marionette	INFO	Listening on port 62319
+Read port: 62319
+WebDriver BiDi listening on ws://127.0.0.1:62306
+1682291529901	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofile02OIqi\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:62306/devtools/browser/f9bc265d-bcbb-4739-b63b-a4a21f2260c7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1682293554015	Marionette	INFO	Stopped listening on port 62319
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63130" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileiwhM90"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682293173948	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682293173954	Marionette	INFO	Listening on port 63139
+Read port: 63139
+WebDriver BiDi listening on ws://127.0.0.1:63130
+1682293174133	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileiwhM90\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:63130/devtools/browser/56d1ed5b-696c-4f4c-9fef-a2e7e29d20b2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+1682293277539	Marionette	INFO	Stopped listening on port 63139
+Dynamically enable window occlusion 1
+1682293592431	geckodriver	INFO	Listening on 127.0.0.1:63494
+1682293595498	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "634 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileILhFQQ"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682293595954	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682293595961	Marionette	INFO	Listening on port 63503
+WebDriver BiDi listening on ws://127.0.0.1:63495
+Read port: 63503
+1682293596130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileILhFQQ\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:63495/devtools/browser/d8bd55ac-b7ab-431e-b077-bcc807cbe444
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1682294844120	geckodriver	INFO	Listening on 127.0.0.1:64096
+1682294847178	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "640 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofilejcIGao"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682294847870	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682294847875	Marionette	INFO	Listening on port 64105
+Read port: 64105
+WebDriver BiDi listening on ws://127.0.0.1:64097
+1682294848042	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofilejcIGao\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:64097/devtools/browser/28610c05-a3dd-40a8-b817-452ea2e5d0d7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+1682294862912	Marionette	INFO	Stopped listening on port 64105
+Dynamically enable window occlusion 1
+1682294913881	geckodriver	INFO	Listening on 127.0.0.1:64165
+1682294916951	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "641 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileeKJoFU"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682294917359	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682294917365	Marionette	INFO	Listening on port 64174
+Read port: 64174
+WebDriver BiDi listening on ws://127.0.0.1:64166
+1682294917503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileeKJoFU\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:64166/devtools/browser/baafce34-5fbe-45d1-831b-a4c938faf4a0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+1682294932072	Marionette	INFO	Stopped listening on port 64174
+Dynamically enable window occlusion 1
+1682295099288	geckodriver	INFO	Listening on 127.0.0.1:64273
+1682295102353	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "642 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileIuLrXJ"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682295102767	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682295102773	Marionette	INFO	Listening on port 64282
+Read port: 64282
+WebDriver BiDi listening on ws://127.0.0.1:64274
+1682295102909	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofileIuLrXJ\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:64274/devtools/browser/4c29f37b-4f33-4f9c-b5a9-45de73824a48
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+1682295117759	Marionette	INFO	Stopped listening on port 64282
+Dynamically enable window occlusion 1
+1682295559925	geckodriver	INFO	Listening on 127.0.0.1:64516
+1682295562991	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "645 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofiletflddH"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682295563546	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682295563551	Marionette	INFO	Listening on port 64525
+WebDriver BiDi listening on ws://127.0.0.1:64517
+Read port: 64525
+1682295563830	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Xander\\AppData\\Local\\Temp\\rust_mozprofiletflddH\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:64517/devtools/browser/db3780cd-98b3-464b-b3d5-8c11f430b95e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://squtrecht.baanreserveren.nl."
+1682295579076	Marionette	INFO	Stopped listening on port 64525
+Dynamically enable window occlusion 1

@@ -1,0 +1,39 @@
+lanes           123   124   125   126   127   128   129   130   131   132   133   134   135   136   137   138   139
+timeslots                                                                                                          
+09:00 - 09:45   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True  True
+09:15 - 10:00  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+09:45 - 10:30   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True   NaN  True  True   NaN   NaN  True  True
+10:00 - 10:45  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+10:30 - 11:15   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True   NaN  True  True  True  True  True
+10:45 - 11:30  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+11:15 - 12:00   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True  True  True  True
+11:30 - 12:15  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+12:00 - 12:45   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True  True  True  True
+12:15 - 13:00  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+12:45 - 13:30   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True   NaN  True  True  True
+13:00 - 13:45  True   NaN  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+13:30 - 14:15   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True  True  True  True
+13:45 - 14:30  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+14:15 - 15:00   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True   NaN  True  True  True  True  True
+14:30 - 15:15  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+15:00 - 15:45   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True   NaN  True  True  True  True  True
+15:15 - 16:00  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+15:45 - 16:30   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True   NaN  True  True  True  True  True
+16:00 - 16:45  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+16:30 - 17:15   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True   NaN  True  True  True  True  True
+16:45 - 17:30   NaN  True  True   NaN  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+17:15 - 18:00   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True
+18:00 - 18:45   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True  True
+18:45 - 19:30   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True   NaN  True  True
+19:30 - 20:15   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+21:00 - 21:45   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True   NaN   NaN  True  True  True   NaN  True
+21:15 - 22:00   NaN   NaN  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+21:45 - 22:30   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True  True  True  True
+22:00 - 22:45  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+22:30 - 23:15   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  True  True  True  True  True  True  True  True  True
+22:45 - 23:30  True  True  True  True  True  True  True  True   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+
+desired_date:  2023-04-24 
+desired_time:  18:45:00 
+chosen_lane:  139 
+table_index:  200
