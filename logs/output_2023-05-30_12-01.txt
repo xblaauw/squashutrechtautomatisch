@@ -1,0 +1,3 @@
+STARTIG SCRIPT...
+devmode False
+waiting 0 days 01:35:00

@@ -1,0 +1,14 @@
+STARTIG SCRIPT...
+devmode True
+2023-05-30 21:49:41 waiting 0 days 00:42:43
+2023-05-30 21:49:41 making dates
+2023-05-30 21:49:41 setting up driver
+2023-05-30 21:49:51 going to login page
+2023-05-30 21:49:54 finding uname and pw
+2023-05-30 21:49:55 getting table data
+2023-05-30 21:49:56 extracting table data
+2023-05-30 21:50:02 building availability dataframe
+2023-05-30 21:50:02 filtering availability dataframe
+2023-05-30 21:50:02 parsing availability
+2023-05-30 21:50:02 determining if there is a room at desired time
+2023-05-30 21:50:02 chosing a lane if there is one

@@ -1,0 +1,5 @@
+STARTIG SCRIPT...
+devmode True
+2023-05-30 21:48:19 waiting 0 days 00:38:46
+2023-05-30 21:48:19 making dates
+2023-05-30 21:48:19 setting up driver
