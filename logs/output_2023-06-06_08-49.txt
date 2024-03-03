@@ -1,5 +1,0 @@
-STARTIG SCRIPT...
-Traceback (most recent call last):
-  File "D:\safe\Projects\squashutrechtautomatisch\main.py", line 3, in <module>
-    a = 1/0
-ZeroDivisionError: division by zero
