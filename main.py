@@ -12,47 +12,58 @@ import datetime as dt
 import pandas as pd
 from time import sleep
 from random import randint
+import logging
 
-lognow = lambda *messages: print(dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), *messages)
+
+now = dt.datetime.now()
+log_filename = f"logs/{now:%Y%m%d%H%M%S}.log"
+log_format   = '%(name)s - %(levelname)s - %(message)s'
+log_level    = logging.INFO
+
+logging.basicConfig(filename=log_filename, filemode='w', format=log_format, level=log_level)
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel(log_level)
+console_handler.setFormatter(logging.Formatter(log_format))
+logging.getLogger('').addHandler(console_handler)
+
 
 if not DEV: 
-    wait_min = 120
+    wait_min = 0
     wait_random_sec = randint(0, wait_min*60)
-    lognow('waiting', pd.Timedelta(wait_random_sec, unit='s'))
+    logging.info(f'waiting {wait_random_sec} seconds')
     sleep(wait_random_sec)
 
 
-# pick a date based on what day it is today
-lognow('making dates')
+logging.info('making dates')
 today = dt.date.today()
 desired_date = today + dt.timedelta(days=7)
 desired_time = dt.time(19, 00)
 
-# Set up the browser driver
-lognow('setting up driver')
+logging.info('setting up driver')
 driver_options = Options()
-if not DEV: driver_options.add_argument("--headless")
+driver_options.binary_location = "/usr/locall/bin/geckodriver"
+
+if not DEV: 
+    logging.info('driver_options.add_argument("--headless")')
+    driver_options.add_argument("--headless")
 driver = webdriver.Firefox(options=driver_options)
 
-# Navigate to the login page
-lognow('going to login page')
+logging.info('going to login page')
 url = 'https://squtrecht.baanreserveren.nl/?goto='
 driver.get(url)
 
-# Log in to the website
-lognow('finding uname and pw')
+logging.info('finding uname and pw')
 driver.find_element(by=By.NAME, value="username").send_keys(username)
 driver.find_element(by=By.NAME, value='password').send_keys(password)
 driver.find_element(by=By.CSS_SELECTOR, value='button').click()
 
-# The next page is the reservation page, now we extract the data:
-lognow('getting table data')
+logging.info('getting table data')
 date_str = desired_date.strftime('%Y-%m-%d')
 date_url = f'https://squtrecht.baanreserveren.nl/reservations/public/{date_str}/sport/113'
 driver.get(date_url)
 
-# get info
-lognow('extracting table data')
+logging.info('extracting table data')
 table = driver.find_elements(by=By.CLASS_NAME, value='free')
 
 timeslots = []
@@ -61,8 +72,7 @@ for free_timeslot in table:
     timeslots.append(free_timeslot.text)
     lanes.append(free_timeslot.get_property('slot'))
 
-# manipulate info, get index of lane at desired time if available in table variable
-lognow('building availability dataframe')
+logging.info('building availability dataframe')
 availability = pd.Series(
     [True for _ in range(len(timeslots))],
     index=pd.MultiIndex.from_arrays((timeslots, lanes)), 
@@ -71,23 +81,21 @@ availability = pd.Series(
 availability['table_index'] = range(len(availability))
 availability = availability.rename_axis(['timeslots', 'lanes'])
 
-# select which lane and time if there are any:
-lognow('filtering availability dataframe')
+logging.info('filtering availability dataframe')
 availability_wide = availability['available'].unstack('lanes')
 availability_wide = availability_wide.drop('76', axis=1)
 
 def parse_availability_times(times):
     return times.to_series().apply(lambda x: pd.to_datetime(x[:5]).time())
    
-lognow('parsing availability')
+logging.info('parsing availability')
 start_times = parse_availability_times(availability_wide.index)
 available_at_desired_time = availability_wide.loc[start_times == desired_time].squeeze().dropna()
 
-lognow('determining if there is a room at desired time')
+logging.info('determining if there is a room at desired time')
 available_at_desired_time_print = available_at_desired_time.copy()
 available_at_desired_time_print.index = available_at_desired_time_print.index.astype(int) - 121
 
-# select the back lanes first if multiple are available
 lane_rank = pd.Series({
     '127': 0,
     '126': 1,
@@ -99,7 +107,7 @@ lane_rank = pd.Series({
     '123': 7
 }).sort_values()
 
-lognow('chosing a lane if there is one')
+logging.info('chosing a lane if there is one')
 chosen_lane = None
 for lane, rank in lane_rank.items():
     if available_at_desired_time.index.isin([lane]).any():
@@ -107,39 +115,42 @@ for lane, rank in lane_rank.items():
         break
 
 if chosen_lane is None:
-    lognow('NO LANES AVAILABLE', 'stopping program...')
+    logging.info('NO LANES AVAILABLE', 'stopping program...')
     driver.quit()
     exit()
 
-lognow('', 'chosen lane:', chosen_lane)
+logging.info(f'chosen_lane={int(chosen_lane)-121}')
 
-# chosen_lane = available_at_desired_time.sort_index(ascending=False).head(1).index[0]
 
-lognow('getting corresponding table index')
+logging.info('getting corresponding table index')
 table_index = availability.xs(chosen_lane, level='lanes')
 table_index = table_index.loc[parse_availability_times(table_index.index)==desired_time, 'table_index']
 
-# click the selected item in the table
-lognow('clicking table cell')
+logging.info('clicking table cell')
 table[table_index.squeeze()].click()
 
-# we land with the cursor in the "Speler 2" veld
+logging.info(f'waiting 3 seconds')
 sleep(3)
-lognow('adding jaron')
+
+logging.info('adding jaron')
 driver.find_element(by=By.CLASS_NAME, value='ms-search').send_keys('Jaron Heising')
+logging.info(f'waiting 8 seconds')
 sleep(8)
-lognow('clicking button 1')
+
+logging.info('clicking button 1')
 driver.find_element(by=By.ID, value='__make_submit').click()
+logging.info(f'waiting 8 seconds')
+sleep(8)
+
 if not DEV:
-    sleep(8)
-    lognow('clicking button 1')
+    logging.info('clicking button 1')
     driver.find_element(by=By.ID, value='__make_submit2').click()
 
-print('\n\n')
-print(dt.datetime.now().replace(microsecond=0), 'SUCCESS!')
-print(
-    '\ndesired_date: ', desired_date, 
-    '\ndesired_time: ', desired_time, 
-    '\nchosen_lane:  ', int(chosen_lane)-121
-)
-print('\n\n')
+
+logging.info(f'''
+{desired_date=}
+{desired_time=}
+chosen_lane: {int(chosen_lane)-121}
+''')
+
+logging.info('all done')
