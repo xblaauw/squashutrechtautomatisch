@@ -1,0 +1,11 @@
+[Unit]
+Description=Reserveer een zaal bij squashutrecht
+
+[Service]
+ExecStart=/home/xander/projects/squashutrechtautomatisch/run.sh
+WorkingDirectory=/home/xander/projects/squashutrechtautomatisch
+User=xander
+Group=xander
+
+[Install]
+WantedBy=multi-user.target
