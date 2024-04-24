@@ -1,6 +1,3 @@
 #!/bin/bash
 
-
-eval "$($(which conda) 'shell.bash' 'hook')" && \
-conda activate squashutrechtautomatisch && \
-python -u main.py
+python3 -u main.py

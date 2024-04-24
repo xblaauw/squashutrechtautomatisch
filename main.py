@@ -2,7 +2,7 @@ print('STARTIG SCRIPT...')
 
 username = 'xblaauw'
 password = 'Tying-Breach-Hazing8'
-DEV = True
+DEV = False
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -20,8 +20,7 @@ logger = logging.getLogger('main.py')
 
 logger.info(f'{DEV = }')
 if not DEV: 
-    wait_min = 0
-    wait_random_sec = randint(0, wait_min*60)
+    wait_random_sec = randint(0, 180)
     logger.info(f'waiting {wait_random_sec} seconds')
     sleep(wait_random_sec)
 
@@ -108,7 +107,7 @@ for lane, rank in lane_rank.items():
         break
 
 if chosen_lane is None:
-    logger.info('NO LANES AVAILABLE', 'stopping program...')
+    logger.info('NO LANES AVAILABLE > stopping program...')
     driver.quit()
     exit()
 
