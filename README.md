@@ -3,4 +3,5 @@
     - from https://github.com/mozilla/geckodriver/releases
 - extract and place`geckodriver` in `/usr/local/bin/geckodriver`
 - run `pip install -r requirements.txt`
-- schedule `./run.sh`
+- schedule `./run.sh` using the service and timer found in `systemd/`
+
